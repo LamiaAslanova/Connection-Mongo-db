@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": "a3002247-55cc-425b-9be7-6832f14ce44a",
+      "title": "Tank Top",
+      "image": "https://preview.colorlib.com/theme/shoppers/images/cloth_1.jpg.webp",
+      "description": "Finding perfect t-shirt",
+      "price": 50
+    },
+    {
+      "id": "5c7994cf-5ee6-4d99-86e6-62620a5076d5",
+      "title": "Corater",
+      "image": "https://preview.colorlib.com/theme/shoppers/images/shoe_1.jpg.webp",
+      "description": "Finding perfect products",
+      "price": 50
+    },
+    {
+      "id": "5550f6e4-00ba-46b0-a0fc-ef3425110d19",
+      "title": "Polo Shirt",
+      "image": "https://preview.colorlib.com/theme/shoppers/images/cloth_2.jpg.webp",
+      "description": "Finding perfect products",
+      "price": 50
+    },
+    {
+      "id": "f0358412-f743-4e8b-a49e-6dbd16d1dda7",
+      "title": "T-Shirt Mockup",
+      "image": "https://preview.colorlib.com/theme/shoppers/images/cloth_3.jpg.webp",
+      "description": "Finding perfect products",
+      "price": 50
+    },
+    {
+      "id": "3a52ac55-d028-4422-9492-7e2b1fec2193",
+      "title": "Tank Top",
+      "image": "https://preview.colorlib.com/theme/shoppers/images/cloth_1.jpg.webp",
+      "description": "Finding perfect t-shirt",
+      "price": 50
+    },
+    {
+      "id": "795f0ab3-c0f9-4db3-a99a-ba5d048658be",
+      "title": "Corater",
+      "image": "https://preview.colorlib.com/theme/shoppers/images/shoe_1.jpg.webp",
+      "description": "Finding perfect products",
+      "price": 50
+    },
+    {
+      "id": "f3e6e551-c65f-4b49-b843-cc5db80ef16f",
+      "title": "Polo Shirt",
+      "image": "https://preview.colorlib.com/theme/shoppers/images/cloth_2.jpg.webp",
+      "description": "Finding perfect products",
+      "price": 50
+    },
+    {
+      "id": "34ba4239-7d00-4fba-b9f5-054ce8e1f2ca",
+      "title": "T-Shirt Mockup",
+      "image": "https://preview.colorlib.com/theme/shoppers/images/cloth_3.jpg.webp",
+      "description": "Finding perfect products",
+      "price": 50
+    }
+  ]
+}

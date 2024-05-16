@@ -1,0 +1,14 @@
+footer{
+    padding: 64px 0px;
+    border-top: 1px solid #edf0f5;
+}
+
+.footer__top img{
+    width: 100%;
+}
+
+.footer__bottom{
+    text-align: center;
+    margin: 48px 0px 0px;
+    padding: 48px 0px 0px;
+}
