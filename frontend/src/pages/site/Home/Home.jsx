@@ -13,7 +13,7 @@ const Home = () => {
         <title>Shoppers - Home Page</title>
       </Helmet>
       {
-        loading ? <Loading /> : <Cards cards={data.slice(1, 4)} />
+        loading ? <Loading /> : <Cards cards={data.slice(0, 3)} />
       }
     </>
   )

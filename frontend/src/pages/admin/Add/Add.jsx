@@ -16,13 +16,7 @@ const Add = () => {
         initialValues={{ title: '', image: '', description: '', price: '' }}
         validate={values => { }}
         onSubmit={(values, { setSubmitting }) => {
-          axios.post('http://localhost:3000/products', {
-            id: uuidv4(),
-            title: values.title,
-            image: values.image,
-            description: values.description,
-            price: values.price
-          }).then(res => {
+          axios.post('http://localhost:8080/api/products', {...values}).then(res => {
             setData([...data, res.data])
           })
         }}

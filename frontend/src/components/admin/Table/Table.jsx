@@ -11,6 +11,7 @@ const Table = ({ infos }) => {
                     <th scope="col">Title</th>
                     <th scope="col">Description</th>
                     <th scope="col">Price</th>
+                    <th scope="col">Delete</th>
                 </tr>
             </thead>
             <tbody>

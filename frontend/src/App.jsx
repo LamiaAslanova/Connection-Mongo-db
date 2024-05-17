@@ -12,9 +12,10 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState("")
   const [basketItems, setBasketItems] = useState(localStorage.getItem('basketItems') ? JSON.parse(localStorage.getItem('basketItems')) : [])
+  const [wishlistItems, setWishlistItems] = useState(localStorage.getItem('wishlistItems') ? JSON.parse(localStorage.getItem('wishlistItems')) : [])
 
   const addToCart = (item) => {
-    const target = basketItems.find(x => x.item.id == item.id)
+    const target = basketItems.find(x => x.item._id == item._id)
     if (!target) {
       let newBasketItem = {
         item: item,
@@ -33,7 +34,7 @@ function App() {
   }
 
   const increaseCart = (item) => {
-    const target = basketItems.find(x => x.item.id == item.item.id)
+    const target = basketItems.find(x => x.item._id == item.item._id)
     target.count += 1
     target.totalPrice += item.item.price
     setBasketItems([...basketItems])
@@ -41,7 +42,7 @@ function App() {
   }
 
   const decreaseCart = (item) => {
-    const target = basketItems.find(x => x.item.id == item.item.id)
+    const target = basketItems.find(x => x.item._id == item.item._id)
     if (target.count > 0) {
       target.count -= 1
       target.totalPrice -= item.item.price
@@ -51,8 +52,23 @@ function App() {
   }
 
   const removeFromCart = (item) => {
-    setBasketItems([...basketItems.filter(x => x.item.id !== item.item.id)])
-    localStorage.setItem('basketItems',JSON.stringify([...basketItems.filter(x => x.item.id !== item.item.id)]))
+    setBasketItems([...basketItems.filter(x => x.item._id !== item.item._id)])
+    localStorage.setItem('basketItems',JSON.stringify([...basketItems.filter(x => x.item._id !== item.item._id)]))
+  }
+
+  const addToWishlist = (item) => {
+    const target = wishlistItems.find(x => x.item._id == item._id)
+    if (!target) {
+      let newWishlistItem = {
+        item: item
+      }
+      setWishlistItems([...wishlistItems, newWishlistItem])
+      localStorage.setItem('wishlistItems', JSON.stringify([...wishlistItems, newWishlistItem]))
+    }
+    else{
+      setWishlistItems([...wishlistItems.filter(y => y.item._id !== target.item._id)])
+      localStorage.setItem('wishlistItems', JSON.stringify([...wishlistItems.filter(y => y.item._id !== target.item._id)]))
+    }
   }
 
   useEffect(() => {
@@ -66,7 +82,7 @@ function App() {
   }, [])
 
   const contextData = {
-    data, setData, loading, setLoading, error, setError, addToCart, basketItems, increaseCart, decreaseCart, removeFromCart
+    data, setData, loading, setLoading, error, setError, addToCart, basketItems, increaseCart, decreaseCart, removeFromCart, addToWishlist, wishlistItems, setWishlistItems
   }
 
   return (

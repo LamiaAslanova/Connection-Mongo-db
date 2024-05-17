@@ -1,0 +1,23 @@
+tr{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.left{
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid #5c626e;
+    margin-right: 10px;
+}
+
+.right{
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid #5c626e;
+    margin-left: 10px;
+}

@@ -9,6 +9,9 @@ const Products = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Shoppers - Products</title>
+            </Helmet>
             {
                 loading ? <Loading /> : <Table infos={data} />
             }

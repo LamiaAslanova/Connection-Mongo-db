@@ -8,6 +8,7 @@ import Error from "../pages/Error/Error";
 import Shop from "../pages/site/Shop/Shop";
 import Products from "../pages/admin/Products/Products";
 import Detail from "../pages/site/Detail/Detail";
+import Wishlist from "../pages/site/Wishlist/Wishlist";
 
 const ROUTES = [{
     path: '/',
@@ -32,6 +33,10 @@ const ROUTES = [{
         {
             path: '*',
             element: <Error/>
+        },
+        {
+            path: 'wishlist',
+            element: <Wishlist/>
         }
     ]
 },

@@ -25,7 +25,7 @@ const Header = () => {
             <div className="col-4">
               <div className="header__top__right">
                 <Link to='#'><i class="fa-solid fa-user"></i></Link>
-                <Link to='#'><i class="fa-regular fa-heart"></i></Link>
+                <Link to='/wishlist'><i class="fa-regular fa-heart"></i></Link>
                 <Link to='/cart' className='pos'><i class="fa-solid fa-cart-shopping"></i><sup>{basketItems.length}</sup></Link>
               </div>
             </div>

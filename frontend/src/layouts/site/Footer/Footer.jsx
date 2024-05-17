@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row footer__top">
           <div className="col-6">
             <div className="row">
-              <div className="col-12">
+              <div className="col-12 nav">
                 <h4>Navigations</h4>
               </div>
             </div>
@@ -60,23 +60,23 @@ const Footer = () => {
           </div>
           <div className="col-6">
             <div className="row">
-              <div className="col-6">
+              <div className="col-6 right-6">
                 <h4>Promo</h4>
                 <Link><img src="https://preview.colorlib.com/theme/shoppers/images/hero_1.jpg.webp" /></Link>
-                <Link>Finding Your Perfect Shoes</Link>
+                <Link className='find'>Finding Your Perfect Shoes</Link>
                 <p>Promo from nuary 15 — 25, 2019</p>
               </div>
-              <div className="col-6">
+              <div className="col-6 right-6">
                 <h4>Contact Info</h4>
-                <div className="loc">
+                <div className="contact">
                   <i class="fa-solid fa-location-dot"></i>
                   <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
                 </div>
-                <div className="tel">
+                <div className="contact">
                   <i class="fa-solid fa-phone"></i>
                   <Link>+2 392 3929 210</Link>
                 </div>
-                <div className="mail">
+                <div className="contact">
                   <i class="fa-solid fa-envelope"></i>
                   <p>emailaddress@domain.com</p>
                 </div>

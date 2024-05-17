@@ -43,7 +43,8 @@ app.get('/api/products/:id', async (req, res) => {
 app.delete('/api/products/:id', async (req, res) => {
     const { id } = req.params
     await Products.findByIdAndDelete(id)
-    res.send('product deleted :|')
+    const items = await Products.find()
+    res.send(items)
 })
 
 app.delete('/api/products', async (req, res) => {
@@ -55,7 +56,7 @@ app.post('/api/products', async (req, res) => {
     const { title, image, description, price } = req.body
     const newProduct = new Products({ title: title, image: image, description: description, price: price })
     await newProduct.save()
-    res.send('new product created :)')
+    res.send(newProduct)
 })
 
 app.put('/api/products/:id', async (req, res) => {
