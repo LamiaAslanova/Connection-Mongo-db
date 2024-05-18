@@ -11,8 +11,10 @@ function App() {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState("")
+  const [search,setSearch]=useState("")
   const [basketItems, setBasketItems] = useState(localStorage.getItem('basketItems') ? JSON.parse(localStorage.getItem('basketItems')) : [])
   const [wishlistItems, setWishlistItems] = useState(localStorage.getItem('wishlistItems') ? JSON.parse(localStorage.getItem('wishlistItems')) : [])
+  const [sortBy,setSortBy]=useState(null)
 
   const addToCart = (item) => {
     const target = basketItems.find(x => x.item._id == item._id)
@@ -82,7 +84,7 @@ function App() {
   }, [])
 
   const contextData = {
-    data, setData, loading, setLoading, error, setError, addToCart, basketItems, increaseCart, decreaseCart, removeFromCart, addToWishlist, wishlistItems, setWishlistItems
+    data, setData, loading, setLoading, error, setError, addToCart, basketItems, increaseCart, decreaseCart, removeFromCart, addToWishlist, wishlistItems, setWishlistItems,search,setSearch,sortBy,setSortBy
   }
 
   return (

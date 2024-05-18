@@ -4,7 +4,7 @@ import './Header.css'
 import MainContext from '../../../context/context'
 
 const Header = () => {
-  const {basketItems} = useContext(MainContext)
+  const {basketItems,search,setSearch} = useContext(MainContext)
 
   return (
     <header>
@@ -14,7 +14,7 @@ const Header = () => {
             <div className="col-4">
               <div className="header__top__left">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="text" placeholder='Search' />
+                <input type="text" placeholder='Search' value={search} onChange={(e)=>setSearch(e.target.value)} />
               </div>
             </div>
             <div className="col-4">

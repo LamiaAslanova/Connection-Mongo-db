@@ -1,0 +1,15 @@
+.sort__buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sort__buttons button{
+    background-color: #7971ea;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
