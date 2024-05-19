@@ -1,0 +1,15 @@
+.cart__table__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart__table{
+    width: 80%;
+    border: 1px solid lightgray;
+}
+
+.cart__table th{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

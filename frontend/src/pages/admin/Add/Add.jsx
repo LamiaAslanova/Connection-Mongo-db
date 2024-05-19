@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import MainContext from '../../../context/context';
 import axios from 'axios';
 import { Helmet } from 'react-helmet';
+import './Add.css'
 
 const Add = () => {
   const { data, setData } = useContext(MainContext)
@@ -31,11 +32,11 @@ const Add = () => {
           isSubmitting,
           /* and other goodies */
         }) => (
-          <form onSubmit={handleSubmit}>
+          <form className='add__form' onSubmit={handleSubmit}>
             <input
               type="text"
               name="title"
-              placeholder='title'
+              placeholder='Title'
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.title}
@@ -43,7 +44,7 @@ const Add = () => {
             <input
               type="text"
               name="image"
-              placeholder='image'
+              placeholder='Image'
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.image}
@@ -51,7 +52,7 @@ const Add = () => {
             <input
               type="text"
               name="description"
-              placeholder='description'
+              placeholder='Description'
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.description}
@@ -59,7 +60,7 @@ const Add = () => {
             <input
               type="number"
               name="price"
-              placeholder='price'
+              placeholder='Price'
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.price}

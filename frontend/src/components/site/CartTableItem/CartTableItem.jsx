@@ -10,9 +10,9 @@ const CartTableItem = ({info}) => {
             <td><img width="120px" src={info.item.image}/></td>
             <td>{info.item.title}</td>
             <td>${info.item.price}</td>
-            <td><button className='left' onClick={()=>decreaseCart(info)} ><i class="fa-solid fa-chevron-left"></i></button>{info.count}<button className='right' onClick={()=>increaseCart(info)}><i class="fa-solid fa-chevron-right"></i></button></td>
+            <td className='quan'><button className='left' onClick={()=>decreaseCart(info)} >-</button>{info.count}<button className='right' onClick={()=>increaseCart(info)}>+</button></td>
             <td>${info.totalPrice}</td>
-            <td><button onClick={()=>removeFromCart(info)} className='btn btn-danger'>Delete</button></td>
+            <td><button onClick={()=>removeFromCart(info)} className='remove__btn'>X</button></td>
         </tr>
     )
 }
