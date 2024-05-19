@@ -17,8 +17,8 @@ const Shop = () => {
                         <div className="sort__buttons">
                             <button onClick={() => setSortBy({ field: "title", asc: true })}>A-Z</button>
                             <button onClick={() => setSortBy({ field: "title", asc: false })}>Z-A</button>
-                            <button onClick={() => setSortBy({ field: "price", asc: true })}>Artan</button>
-                            <button onClick={() => setSortBy({ field: "price", asc: false })}>Azalan</button>
+                            <button onClick={() => setSortBy({ field: "price", asc: true })}>Low to High</button>
+                            <button onClick={() => setSortBy({ field: "price", asc: false })}>High to Low</button>
                             <button onClick={() => setSortBy(null)}>Default</button>
                         </div>
                     </div>
